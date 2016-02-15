@@ -4,7 +4,7 @@ This is a modern JS skeleton with React and Redux for [Brunch](http://brunch.io)
 
 ## Installation
 
-Clone this repo manually or use `brunch new dir -s brunch/redux-skeleton`
+Clone this repo manually or use `brunch new dir -s redux`
 
 ## Getting started
 
