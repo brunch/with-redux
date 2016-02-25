@@ -12,6 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     <Provider store={store}>
       <App />
     </Provider>,
-    document.getElementById('app')
+    document.querySelector('#app')
   );
 });
