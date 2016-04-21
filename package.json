@@ -18,9 +18,8 @@
     "redux": "~3.2.1"
   },
   "devDependencies": {
-    "auto-reload-brunch": "^2.0.0",
+    "auto-reload-brunch": "^2.7.0",
     "hmr-brunch": "^0.1.0",
-    "auto-reload-brunch": "^2.2.0",
     "babel-brunch": "~6.0.0",
     "babel-preset-es2015": "~6.3.13",
     "babel-preset-react": "~6.3.13",
