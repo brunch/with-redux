@@ -5,7 +5,13 @@ import { createStore } from 'redux';
 import counterApp from './reducers';
 import App from 'components/App';
 
-const store = createStore(counterApp);
+const store = createStore(counterApp, 0);
+
+if (module.hot) {
+  module.hot.accept('./reducers', () => {
+    store.replaceReducer(require('./reducers').default);
+  });
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
