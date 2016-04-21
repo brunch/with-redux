@@ -3,8 +3,7 @@ exports.config = {
 
   plugins: {
     babel: {
-      presets: ['es2015', 'react'],
-      pattern: /\.(es6|jsx|js)$/
+      presets: ['es2015', 'react']
     }
   },
 
