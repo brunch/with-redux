@@ -1,12 +1,13 @@
-exports.config = {
-  hot: true,
-
-  files: {
-    javascripts: { joinTo: 'app.js' },
-    stylesheets: { joinTo: 'app.css' }
+// See http://brunch.io for documentation.
+exports.files = {
+  javascripts: {
+    joinTo: 'app.js'
   },
-
-  plugins: {
-    babel: { presets: ['es2015', 'react'] }
-  }
+  stylesheets: {joinTo: 'app.css'}
 };
+
+exports.plugins = {
+  babel: {presets: ['latest', 'react']}
+};
+
+exports.hot = true;
