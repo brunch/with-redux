@@ -19,7 +19,7 @@ BaseCounter.propTypes = {
 };
 
 const mapStateToProps = state => {
-  return { count: state };
+  return { count: state.count };
 };
 
 const mapDispatchToProps = dispatch => {
