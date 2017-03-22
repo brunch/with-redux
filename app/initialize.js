@@ -2,10 +2,10 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import counterApp from './reducers';
+import counterApp, { initialState } from './reducers';
 import App from 'components/App';
 
-const store = createStore(counterApp, module.hot && module.hot.data && module.hot.data.counter || 0);
+const store = createStore(counterApp, module.hot && module.hot.data && module.hot.data.counter || initialState);
 
 if (module.hot) {
   module.hot.accept('./reducers', () => {
