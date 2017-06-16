@@ -10,17 +10,18 @@
     "build": "brunch build --production"
   },
   "dependencies": {
-    "react": "^15.4",
-    "react-dom": "^15.4",
-    "react-redux": "~4.3.0",
-    "redux": "~3.2.1"
+    "react": "^15.6",
+    "react-dom": "^15.6",
+    "prop-types": "^15.5",
+    "react-redux": "~5.0.5",
+    "redux": "~3.6.0"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2",
     "hmr-brunch": "^0.1",
-    "babel-brunch": "~6.0.0",
+    "babel-brunch": "~6.1.1",
     "babel-preset-latest": "^6",
-    "babel-preset-react": "~6.22",
+    "babel-preset-react": "~6.24",
     "brunch": "^2",
     "clean-css-brunch": "^2",
     "uglify-js-brunch": "^2"
