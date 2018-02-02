@@ -19,6 +19,8 @@
 nbproject
 Thumbs.db
 
+.vscode
+
 # NPM packages folder.
 node_modules/
 
