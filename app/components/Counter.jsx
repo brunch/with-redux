@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 const BaseCounter = ({ count, onPlusClick, onMinusClick }) => (
@@ -15,18 +16,14 @@ const BaseCounter = ({ count, onPlusClick, onMinusClick }) => (
 BaseCounter.propTypes = {
   count: PropTypes.number.isRequired,
   onPlusClick: PropTypes.func.isRequired,
-  onMinusClick: PropTypes.func.isRequired
+  onMinusClick: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = state => {
-  return { count: state };
-};
+const mapStateToProps = state => ({ count: state });
 
-const mapDispatchToProps = dispatch => {
-  return {
-    onPlusClick: () => dispatch({ type: 'INCREMENT' }),
-    onMinusClick: () => dispatch({ type: 'DECREMENT' })
-  };
-};
+const mapDispatchToProps = dispatch => ({
+  onPlusClick: () => dispatch({ type: 'INCREMENT' }),
+  onMinusClick: () => dispatch({ type: 'DECREMENT' }),
+});
 
-export default connect(mapStateToProps, mapDispatchToProps)(BaseCounter)
+export default connect(mapStateToProps, mapDispatchToProps)(BaseCounter);
