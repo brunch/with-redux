@@ -20,7 +20,6 @@
     "auto-reload-brunch": "^2",
     "babel-brunch": "~6.1.1",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-latest": "^6",
     "babel-preset-react": "~6.24",
     "brunch": "^2",
     "clean-css-brunch": "^2",
